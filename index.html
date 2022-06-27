@@ -224,7 +224,9 @@
                 </div>
                 <div class="form-group col-md-6 mt-3">
                   <style>
-                    
+                    #refID{
+                      display:none;
+                    }
                   </style>
                   <input type="text" class="form-control" name="refID" id="refID" placeholder="Ref ID">
                 </div>
@@ -292,7 +294,7 @@
   <script>
 var chk=document.getElementById('refCheck');
 var refbx=document.getElementById("refID");
-chk.addEventListener("change",(e)=>chk.checked?console.log("checked"):console.log("not checked"))
+chk.addEventListener("change",(e)=>chk.checked?refbx.style.display="block":refbx.style.display="none");
 
   </script>
 
